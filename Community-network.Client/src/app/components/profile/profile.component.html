@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row" *ngIf="contact">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-2">
+      <a href="/userinfo;request={{contact.Id}}">{{contact.UserName}}</a>
+    </div>
+    <div *ngIf="!isYou" class="col-md-2">
+      <a (click)="follow(contact.Id)"  class='btn btn-info btn-xs'><span class="glyphicon glyphicon-follow"></span>{{
+        isFollow ? 'UnFollow'
+        :
+        'Follow' }}</a>
+      <a (click)="block(contact.Id)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> {{
+        isBlock ? 'UnBlock'
+        :
+        'Block' }}</a>
+    </div>
+
+  </div>
+
+</div>
+
+

@@ -1,0 +1,17 @@
+
+<div *ngIf="followers">
+  <span *ngFor="let follower of followers">
+    <app-profile [contact]="follower" [isFollow]="isFollow" [isBlock]="isBlock"></app-profile>
+  </span>
+
+</div>
+<div *ngIf="followings">
+  <div *ngFor="let following of followings">
+    <app-profile [contact]="following" [isFollow]="isFollow" [isBlock]="isBlock"></app-profile>
+  </div>
+</div>
+<div *ngIf="blockUsers">
+  <div *ngFor="let follower of blockUsers">
+    <app-profile [contact]="follower" [isFollow]="isFollow" [isBlock]="isBlock"></app-profile>
+  </div>
+</div>

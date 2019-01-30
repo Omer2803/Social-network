@@ -1,0 +1,44 @@
+<div class="container">
+	<div class="row">
+			<div class="col-md-2">
+				<div class="modal-header">
+					<h4 class="modal-title">Notifications <i class="fa fa-bell"></i></h4>
+				  </div>
+				  <div  class="modal-body" *ngFor="let notification of notifications">
+				  <app-notification [notification]="notification"></app-notification>
+				  </div>
+				  <div class="modal-footer">
+				  </div>
+			</div>
+		<div class="col-md-6 offset-1">
+			<div class="widget-area no-padding blank">
+				<div class="status-upload">
+					<form [formGroup]="postForm" (ngSubmit)="onPost()">
+						<div class="form-group">
+							<textarea (change)="showSelect()" class="form-control" formControlName="post" placeholder="What's on your mind?">
+							</textarea>
+							<select #tagUsers (change)="tagUser(tagUsers.value)" [hidden]="!isTag">
+								<option></option>
+								<option *ngFor="let f of followings">{{f.UserName}}</option>
+							</select>
+							<ul>
+									<span class="btn btn-default btn-file fa fa-cloud-upload">
+											Upload
+											<input type="file" (change)="onFileSelected($event)" />
+										</span>
+							</ul>
+							<button class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 offset-3" *ngFor="let post of posts">
+			<app-post [post]="post"></app-post>
+		</div>
+		
+	</div>
+
+</div>
+
+

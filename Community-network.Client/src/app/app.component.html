@@ -1,0 +1,72 @@
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">OzBook</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+            <div class="container">
+                <div class="row">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" routerLink="/" *ngIf="currentProfile">
+                            <i class="fa fa-home"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" routerLink="/edit" *ngIf="currentProfile">
+                            <i class="fa fa-edit"></i>
+                            Edit
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/friends;request=followers" (click)="navToFriends('followers')"
+                            *ngIf="currentProfile">
+                            <i class="fa fa-users"></i>
+                            Followers
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/friends;request=following" (click)="navToFriends('following')"
+                            *ngIf="currentProfile">
+                            <i class="fa fa-users"></i>
+                            Following
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="friends;request=block" (click)="navToFriends('block')" *ngIf="currentProfile">
+                            <i class="fa fa-users"></i>
+                            Block Users
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="col-md-2 offset-1" *ngIf="currentProfile">
+                            <input type="text" #userName />
+                            <button class="btn btn-outline-success my-2 my-sm-0" (click)="navToProfile(userName.value)">Search</button>
+
+                    </li >
+                  
+                    <li class="nav-item active offset-4">
+                        <a class="nav-link" href="#" routerLink="/" (click)="logout()" *ngIf="currentProfile">
+                            <i class="fa fa-sign-out"></i>
+                            Logout
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav>
+<hr>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+ <span *ngIf="followNotify">  <a href="/userinfo;request={{profile.Id}}">{{profile.UserName}}</a> started following you</span>
+ <span *ngIf="commentNotify"><a href="/userinfo;request={{profile.Id}}">{{profile.UserName}}</a>
+     commented on your <a href="/post;postId={{notification.ObjectId}}">post</a>
+    </span>
+ <span *ngIf="mentionNotify"> <a href="/userinfo;request={{profile.Id}}">{{profile.UserName}}</a> mentioned you in his <a href="/post;postId={{notification.ObjectId}}">post</a></span>
+ <span *ngIf="likeNotify"> <a href="/userinfo;request={{profile.Id}}">{{profile.UserName}}</a> liked your <a href="/post;postId={{notification.ObjectId}}">post</a></span>
+
+
+   
+

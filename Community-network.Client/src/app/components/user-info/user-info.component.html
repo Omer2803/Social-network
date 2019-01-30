@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-2 offset-1">
+            <nav class="navbar navbar-inverse sidebar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a (click)="getFollowers(searchUserId)">Followers<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                            <li><a (click)="getFollowings(searchUserId)">Following<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                            <li><a data-toggle="modal" data-target="#profileDetails">Profile<span style="font-size:16px;"
+                                        class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="col-md-6" *ngIf="followers">
+    <div *ngFor="let f of followers">
+        <app-profile [contact]="f"></app-profile>
+    </div>
+</div>
+
+<div class="col-md-6" *ngIf="followings">
+    <div *ngFor="let fol of followings">
+        <app-profile [contact]="fol"></app-profile>
+    </div>
+</div>
+<br>
+<hr>
+<div *ngIf="posts">
+    <div class="col-md-6 offset-3" *ngFor="let post of posts">
+        <app-post [post]="post"></app-post>
+    </div>
+</div>
+
+
+
+<div *ngIf="contact" class="modal fade" id="profileDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Contact Details</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input class="form-control" type="text" value="{{contact.FirstName}}" readonly="readonly">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input class="form-control" type="text" value="{{contact.LastName}}" readonly="readonly">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input class="form-control" type="text" value="{{contact.UserName}}" readonly="readonly">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input class="form-control" type="text" value="{{contact.Email}}" readonly="readonly">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    <input class="form-control" type="date" value="{{contact.BirhtDate | date:'yyyy-MM-dd'}}" readonly="readonly">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

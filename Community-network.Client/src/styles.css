@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.background-image{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7));
+    /* -webkit-background-size: repeat;
+    -moz-background-size: repeat;
+    background-size: repeat;
+    -o-background-size: repeat; */
+}
