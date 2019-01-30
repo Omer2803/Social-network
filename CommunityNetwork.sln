@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{2F4BDA13-CDE0-46F4-ADF0-D266DC0DC8AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityNetwork.Common", "CommunityNetwork.Common\CommunityNetwork.Common.csproj", "{301E0F01-B128-4B06-B56C-A9792E9D57C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunityNetWork.Dal", "CommunityNetWork.Dal\CommunityNetWork.Dal.csproj", "{5783C551-B1F7-48F2-AB81-0AEE4598159E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialSerivce", "SocialSerivce\SocialSerivce.csproj", "{F0E65C9E-5A39-46EF-9F0E-EFD9FDB9B8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.BL", "Social.BL\Social.BL.csproj", "{5F9D868F-3C1A-4A38-828C-3F641A2AF258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neo4J.Test", "Neo4J.Test\Neo4J.Test.csproj", "{9AD9765A-8ACA-4521-A977-9BB7F19BA25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.BL", "Authentication.BL\Authentication.BL.csproj", "{FFEEDC6C-DE8A-4989-A99A-9978CCE67B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService", "IdentityService\IdentityService.csproj", "{75318D3B-0377-4B59-A5FF-0DA52EF8D1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.BL", "Identity.BL\Identity.BL.csproj", "{18AF2A3A-7CB8-4669-8E1C-2EF97753373B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL.Test", "BL.Test\BL.Test.csproj", "{66DB9061-4C22-4794-8406-B22B8A0E9DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationsService", "NotificationsService\NotificationsService.csproj", "{E37A24B2-64B5-4B49-A10E-3AD34DA3B8C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F4BDA13-CDE0-46F4-ADF0-D266DC0DC8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4BDA13-CDE0-46F4-ADF0-D266DC0DC8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4BDA13-CDE0-46F4-ADF0-D266DC0DC8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4BDA13-CDE0-46F4-ADF0-D266DC0DC8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{301E0F01-B128-4B06-B56C-A9792E9D57C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301E0F01-B128-4B06-B56C-A9792E9D57C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301E0F01-B128-4B06-B56C-A9792E9D57C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301E0F01-B128-4B06-B56C-A9792E9D57C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5783C551-B1F7-48F2-AB81-0AEE4598159E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5783C551-B1F7-48F2-AB81-0AEE4598159E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5783C551-B1F7-48F2-AB81-0AEE4598159E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5783C551-B1F7-48F2-AB81-0AEE4598159E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E65C9E-5A39-46EF-9F0E-EFD9FDB9B8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E65C9E-5A39-46EF-9F0E-EFD9FDB9B8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E65C9E-5A39-46EF-9F0E-EFD9FDB9B8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E65C9E-5A39-46EF-9F0E-EFD9FDB9B8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9D868F-3C1A-4A38-828C-3F641A2AF258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9D868F-3C1A-4A38-828C-3F641A2AF258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9D868F-3C1A-4A38-828C-3F641A2AF258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9D868F-3C1A-4A38-828C-3F641A2AF258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD9765A-8ACA-4521-A977-9BB7F19BA25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD9765A-8ACA-4521-A977-9BB7F19BA25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD9765A-8ACA-4521-A977-9BB7F19BA25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD9765A-8ACA-4521-A977-9BB7F19BA25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEEDC6C-DE8A-4989-A99A-9978CCE67B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEEDC6C-DE8A-4989-A99A-9978CCE67B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEEDC6C-DE8A-4989-A99A-9978CCE67B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEEDC6C-DE8A-4989-A99A-9978CCE67B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75318D3B-0377-4B59-A5FF-0DA52EF8D1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75318D3B-0377-4B59-A5FF-0DA52EF8D1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75318D3B-0377-4B59-A5FF-0DA52EF8D1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75318D3B-0377-4B59-A5FF-0DA52EF8D1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AF2A3A-7CB8-4669-8E1C-2EF97753373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AF2A3A-7CB8-4669-8E1C-2EF97753373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AF2A3A-7CB8-4669-8E1C-2EF97753373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AF2A3A-7CB8-4669-8E1C-2EF97753373B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DB9061-4C22-4794-8406-B22B8A0E9DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DB9061-4C22-4794-8406-B22B8A0E9DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DB9061-4C22-4794-8406-B22B8A0E9DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DB9061-4C22-4794-8406-B22B8A0E9DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E37A24B2-64B5-4B49-A10E-3AD34DA3B8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37A24B2-64B5-4B49-A10E-3AD34DA3B8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37A24B2-64B5-4B49-A10E-3AD34DA3B8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37A24B2-64B5-4B49-A10E-3AD34DA3B8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {084BD0FE-A31F-4950-9924-8691B05FB137}
+	EndGlobalSection
+EndGlobal
